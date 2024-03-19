@@ -38,3 +38,19 @@ const objectsArray = arrayToObjects(resultArray);
 
 //4. Print the result:
 console.log(objectsArray);
+
+// Remove the last element from the sorted array:
+objectsArray.pop();
+
+// Insert the following object at index 1:
+objectsArray.splice(1, 0, {
+  id: "48",
+  name: "Barry",
+  occupation: "Runner",
+  age: "25",
+});
+
+// Add the following object to the end of the array:
+objectsArray.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
+
+// As a final task, transform the final set of data back into CSV format.
